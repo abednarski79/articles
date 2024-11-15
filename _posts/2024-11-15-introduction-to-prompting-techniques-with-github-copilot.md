@@ -24,7 +24,8 @@ Use comments to describe what you want the code to do. Copilot uses these as cue
 // Function to check if a number is prime
 public static boolean isPrime(int number) {
     // Copilot will suggest the complete implementation based on this comment
-}```
+}
+```
 
 #### 2. Write Partial Code Snippets
 
@@ -33,7 +34,8 @@ Start by writing part of the code or a function signature, and let Copilot compl
 ```java
 public static int fibonacci(int n) {
     // Copilot will suggest the rest of the implementation for the Fibonacci sequence
-}```
+}
+```
 
 #### 3. Use JavaDoc Comments
 
@@ -48,7 +50,8 @@ JavaDoc comments provide Copilot with a detailed description of a method's purpo
  */
 public static int add(int a, int b) {
     // Copilot will generate the addition logic
-}```
+}
+```
 
 #### 4. Be Specific in Your Instructions
 
