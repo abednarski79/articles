@@ -2,6 +2,7 @@
 layout: post
 title: Introduction to Parallel Code Execution in Java
 date: 2024-01-15
+tags: threads, parallel execution
 ---
 
 
