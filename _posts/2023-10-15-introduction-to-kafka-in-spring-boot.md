@@ -2,7 +2,7 @@
 layout: post
 title: Introduction to Kafka in Spring Boot
 date: 2023-10-15
-tags: kafkatempalte, spring, kafka
+tags: KafkaTempalte Spring Kafka
 ---
 
 Apache Kafka is a distributed event-streaming platform used for building real-time data pipelines and streaming applications. Spring Boot provides seamless integration with Kafka through the **spring-kafka** library, simplifying its usage in Java-based applications.
