@@ -2,6 +2,7 @@
 layout: post
 title: Introduction to Stream Processing in Java
 date: 2024-07-15
+tags: streams, java
 ---
 
 
