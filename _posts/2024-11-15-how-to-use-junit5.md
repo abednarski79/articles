@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Use JUnit 5 for Simple Method Testing (2)
+title: How to Use JUnit 5 for Simple Method Testing
 date: 2024-11-15
 ---
 
