@@ -2,6 +2,7 @@
 layout: post
 title: Introduction to Spring JPA with CRUD Operations
 date: 2022-10-15
+tags: spring jpa
 ---
 
 # Introduction to Spring JPA with CRUD Operations
