@@ -4,8 +4,6 @@ author: "abednarski79"
 baseurl: "/articles" # This matches your repository name
 url: "https://abednarski79.github.io" # Your GitHub Pages domain
 markdown: kramdown
-
-# Optional: Plugins (if needed)
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+- jekyll-remote-theme # add this line to the plugins list if you already have one
