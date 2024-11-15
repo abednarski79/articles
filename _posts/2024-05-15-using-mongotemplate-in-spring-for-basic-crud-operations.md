@@ -1,3 +1,4 @@
+---
 layout: post
 title: Using MongoTemplate in Spring for Basic CRUD Operations
 date: 2024-05-15
@@ -15,7 +16,7 @@ This article explains how to perform basic CRUD (Create, Read, Update, Delete) o
 
 #### 1. Add Dependencies
 
-o use Spring Data MongoDB, include the following dependency in your **pom.xml**:
+To use Spring Data MongoDB, include the following dependency in your **pom.xml**:
 
 ```xml
 <dependency>
@@ -201,7 +202,7 @@ public void deleteAllUsers() {
 }
 ```
 
-#### Full Example Service Class
+### Full Example Service Class
 
 Here’s the complete service class with all CRUD operations:
 
@@ -260,7 +261,7 @@ public class UserService {
 }
 ```
 
-### Testing the Application
+## Testing the Application
 
 You can use Spring Boot's REST controller or unit tests to validate the functionality:
 
@@ -299,6 +300,6 @@ public class UserController {
 }
 ```
 
-### Conclusion
+## Conclusion
 
 Using **MongoTemplate**, you can implement fine-grained control over MongoDB operations in a Spring application. It provides flexibility for crafting custom queries and updates, making it a great choice for advanced use cases. For simpler applications, consider using MongoRepository for convenience.
