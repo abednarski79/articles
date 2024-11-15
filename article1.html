@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article Title</title>
+    <title>How to Use JUnit 5 for Simple Method Testing</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
@@ -19,40 +19,94 @@
     </style>
 </head>
 <body>
-    <!-- Article Content -->
     <div class="container my-5">
-        <h1 class="text-center">Article Title</h1>
+        <!-- Title -->
+        <h1 class="text-center">How to Use JUnit 5 for Simple Method Testing</h1>
 
         <!-- Introduction -->
         <section class="mt-4">
             <h2>Introduction</h2>
-            <p>A brief overview of the topic or problem discussed in this article.</p>
+            <p>JUnit 5, the latest version of the popular Java testing framework, provides a modern and flexible platform for writing unit tests. It introduces several improvements over JUnit 4, such as better support for Java 8 features, more powerful assertions, and dynamic testing capabilities. In this article, we’ll demonstrate how to use JUnit 5 to test a simple Java method.</p>
         </section>
 
         <!-- Main Section -->
         <section class="mt-4">
             <h2>Main Section</h2>
-            <p>Key content and explanation with examples:</p>
-            <pre><code>
-// Example: Hello World in Java
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
+            <!-- Method to Test -->
+            <h4>The Method to Test</h4>
+            <p>Let's consider a simple method in a utility class that checks if a given number is even:</p>
+            <pre><code>public class MathUtils {
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
     }
-}
+}</code></pre>
+
+            <!-- Setting Up JUnit 5 -->
+            <h4>Setting Up JUnit 5</h4>
+            <p>To use JUnit 5, ensure your project includes the JUnit 5 dependencies. If you're using Maven, add the following to your <code>pom.xml</code>:</p>
+            <pre><code>&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
+        &lt;artifactId&gt;junit-jupiter&lt;/artifactId&gt;
+        &lt;version&gt;5.10.0&lt;/version&gt;
+        &lt;scope&gt;test&lt;/scope&gt;
+    &lt;/dependency&gt;
+&lt;/dependencies&gt;
             </code></pre>
-            <pre><code>
-// Example: Simple Loop in Java
-for (int i = 0; i < 5; i++) {
-    System.out.println("Iteration: " + i);
-}
-            </code></pre>
+            <p>For Gradle, use:</p>
+            <pre><code>testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'</code></pre>
+
+            <!-- Writing the Test -->
+            <h4>Writing the Test</h4>
+            <p>Here’s a basic test for the <code>isEven</code> method:</p>
+            <pre><code>import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
+public class MathUtilsTest {
+
+    @Test
+    void testIsEven() {
+        // Test case: Even number
+        assertTrue(MathUtils.isEven(4), "4 should be even");
+        
+        // Test case: Odd number
+        assertFalse(MathUtils.isEven(3), "3 should not be even");
+    }
+}</code></pre>
+
+            <!-- Explanation of the Test -->
+            <h4>Explanation of the Test</h4>
+            <p><strong>Test Annotation:</strong> The <code>@Test</code> annotation marks a method as a test method.</p>
+            <p><strong>Assertions:</strong></p>
+            <ul>
+                <li><code>assertTrue(condition, message)</code>: Ensures the condition is true, otherwise fails with the provided message.</li>
+                <li><code>assertFalse(condition, message)</code>: Ensures the condition is false.</li>
+            </ul>
+            <p><strong>Testing Multiple Scenarios:</strong> We test both even and odd numbers to verify that the method works correctly for different inputs.</p>
+
+            <!-- Running the Test -->
+            <h4>Running the Test</h4>
+            <p>Most modern IDEs like IntelliJ IDEA, Eclipse, or VS Code support running JUnit 5 tests directly. To execute the test:</p>
+            <ol>
+                <li>Right-click on the test file or method and select <strong>Run</strong>.</li>
+                <li>Alternatively, use the terminal to run tests with Maven or Gradle:</li>
+            </ol>
+            <p><strong>Maven:</strong> <code>mvn test</code></p>
+            <p><strong>Gradle:</strong> <code>./gradlew test</code></p>
         </section>
 
         <!-- Summary -->
         <section class="mt-4">
             <h2>Summary</h2>
-            <p>A concise recap of the key points and insights shared in this article.</p>
+            <p>JUnit 5 simplifies unit testing with its powerful assertions, cleaner API, and support for modern Java features. In this article, we covered:</p>
+            <ul>
+                <li>Writing a simple method to check if a number is even.</li>
+                <li>Setting up JUnit 5 in your project.</li>
+                <li>Creating and running tests using JUnit 5.</li>
+            </ul>
+            <p>Unit testing is essential for ensuring the reliability of your code, and JUnit 5 makes it easier than ever to write and maintain tests. Start incorporating it into your development workflow today!</p>
         </section>
     </div>
 </body>
