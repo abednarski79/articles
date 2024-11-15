@@ -39,7 +39,7 @@ public static int fibonacci(int n) {
 
 JavaDoc comments provide Copilot with a detailed description of a method's purpose, making it easier for Copilot to generate relevant code.
 
-````java
+```java
 /**
  * Returns the sum of two numbers.
  * @param a First number
@@ -48,18 +48,18 @@ JavaDoc comments provide Copilot with a detailed description of a method's purpo
  */
 public static int add(int a, int b) {
     // Copilot will generate the addition logic
-}````
+}```
 
 #### 4. Be Specific in Your Instructions
 
 The more specific you are in your comments or code structure, the better Copilot can assist.
 
-````java
+```java
 // Function to sort an array using the quicksort algorithm
 public static void quicksort(int[] arr) {
     // Copilot will suggest the quicksort implementation
 }
-````
+```
 
 ### Advanced Prompting Techniques
 
@@ -67,39 +67,39 @@ public static void quicksort(int[] arr) {
 
 If the task is complex, break it into smaller, manageable steps. Write a comment or placeholder for each step, and let Copilot fill in the details.
 
-````java
+```java
 // Step 1: Divide the array into two halves
 // Step 2: Recursively sort both halves
 // Step 3: Merge the sorted halves
 public static void mergeSort(int[] arr) {
     // Copilot will fill in the recursive and merge logic
 }
-````
+```
 
 #### 2. Leverage Context from Surrounding Code
 
 Copilot uses the context from the surrounding code to generate suggestions. Ensure that variable names, functions, and overall structure are clear and consistent.
 
-````java
+```java
 // Function to calculate the factorial of a number
 public static int factorial(int n) {
     if (n == 0) return 1;
     // Copilot will infer the recursive implementation based on context
     return n * factorial(n - 1);
 }
-````
+```
 
 #### 3. Prompt for Documentation and Tests
 
 Copilot can generate not only code but also documentation and test cases. Prompt it by writing a comment or test function header.
 
-````java
+```java
 // Unit tests for the factorial function
 @Test
 public void testFactorial() {
     // Copilot will suggest test cases for the factorial method
 }
-````
+```
 
 ### Summary
 
