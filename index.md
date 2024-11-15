@@ -10,3 +10,7 @@ Here you'll find articles about various topics related to programming and more.
 {% post_url 2024-11-15-how-to-use-junit5 %}
 
 
+[Link text]({% post_url 2024-11-15-how-to-use-junit %})
+
+
+
