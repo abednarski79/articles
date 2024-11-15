@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article Title</title>
+    <title>Introduction to Prompting Techniques with GitHub Copilot</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
@@ -19,40 +19,100 @@
     </style>
 </head>
 <body>
-    <!-- Article Content -->
     <div class="container my-5">
-        <h1 class="text-center">Article Title</h1>
+        <!-- Title -->
+        <h1 class="text-center">Introduction to Prompting Techniques with GitHub Copilot</h1>
 
         <!-- Introduction -->
         <section class="mt-4">
             <h2>Introduction</h2>
-            <p>A brief overview of the topic or problem discussed in this article.</p>
+            <p>
+                GitHub Copilot, powered by OpenAI, is an AI-powered code completion tool designed to assist developers by suggesting whole lines or blocks of code. 
+                While it’s incredibly effective out of the box, mastering the art of prompting can greatly enhance its usefulness. 
+                In this article, we’ll explore the key prompting techniques that enable you to get the most out of Copilot, helping you write cleaner, faster, and more accurate code.
+            </p>
         </section>
 
         <!-- Main Section -->
         <section class="mt-4">
             <h2>Main Section</h2>
-            <p>Key content and explanation with examples:</p>
-            <pre><code>
-// Example: Hello World in Java
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-            </code></pre>
-            <pre><code>
-// Example: Simple Loop in Java
-for (int i = 0; i < 5; i++) {
-    System.out.println("Iteration: " + i);
-}
-            </code></pre>
+
+            <!-- What is Prompting -->
+            <h4>What is Prompting in GitHub Copilot?</h4>
+            <p>
+                Prompting refers to the process of providing context or instructions in your code editor to guide Copilot’s suggestions. 
+                It’s essentially a form of communication with the AI to help it generate more relevant and accurate code snippets.
+            </p>
+
+            <!-- Basic Prompting Techniques -->
+            <h4>Basic Prompting Techniques</h4>
+
+            <h5>1. Provide Clear Comments</h5>
+            <p>Use comments to describe what you want the code to do. Copilot uses these as cues to generate relevant code.</p>
+            <pre><code>// Function to check if a number is prime
+public static boolean isPrime(int number) {
+    // Copilot will suggest the complete implementation based on this comment
+}</code></pre>
+
+            <h5>2. Write Partial Code Snippets</h5>
+            <p>Start by writing part of the code or a function signature, and let Copilot complete the rest.</p>
+            <pre><code>def fibonacci(n):
+    # Copilot will suggest the rest of the implementation for the Fibonacci sequence
+</code></pre>
+
+            <h5>3. Use Docstrings</h5>
+            <p>Docstrings provide Copilot with a detailed description of a function's purpose, especially in Python.</p>
+            <pre><code>def add(a, b):
+    """
+    Returns the sum of two numbers.
+    """
+    # Copilot will generate the addition logic
+</code></pre>
+
+            <h5>4. Be Specific in Your Instructions</h5>
+            <p>The more specific you are in your comments or code structure, the better Copilot can assist.</p>
+            <pre><code># Function to sort a list using the quicksort algorithm
+def quicksort(arr):
+    # Copilot will suggest the quicksort implementation
+</code></pre>
+
+            <!-- Advanced Prompting Techniques -->
+            <h4>Advanced Prompting Techniques</h4>
+
+            <h5>1. Chaining Prompts</h5>
+            <p>If the task is complex, break it into smaller, manageable steps. Write a comment or placeholder for each step, and let Copilot fill in the details.</p>
+            <pre><code># Step 1: Divide the list into two halves
+# Step 2: Recursively sort both halves
+# Step 3: Merge the sorted halves
+</code></pre>
+
+            <h5>2. Leverage Context from Surrounding Code</h5>
+            <p>Copilot uses the context from the surrounding code to generate suggestions. Ensure that variable names, functions, and overall structure are clear and consistent.</p>
+            <pre><code>// Function to calculate the factorial of a number
+public static int factorial(int n) {
+    if (n == 0) return 1;
+    // Copilot will infer the recursive implementation based on context
+}</code></pre>
+
+            <h5>3. Prompt for Documentation and Tests</h5>
+            <p>Copilot can generate not only code but also documentation and test cases. Prompt it by writing a comment or test function header.</p>
+            <pre><code>// Unit tests for the factorial function
+@Test
+void testFactorial() {
+    // Copilot will suggest test cases for the factorial method
+}</code></pre>
         </section>
 
         <!-- Summary -->
         <section class="mt-4">
             <h2>Summary</h2>
-            <p>A concise recap of the key points and insights shared in this article.</p>
+            <p>
+                Prompting is a skill that can make GitHub Copilot an indispensable part of your workflow. 
+                By providing clear comments, writing partial code snippets, and leveraging advanced techniques like chaining and contextual prompting, you can transform Copilot into a powerful coding assistant.
+            </p>
+            <p>
+                Start experimenting with these techniques to unlock Copilot’s full potential, and enjoy a more productive and creative coding experience.
+            </p>
         </section>
     </div>
 </body>
