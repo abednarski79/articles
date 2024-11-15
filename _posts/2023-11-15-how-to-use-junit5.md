@@ -2,7 +2,7 @@
 layout: post
 title: How to Use JUnit 5 for Simple Method Testing
 date: 2023-11-15
-tags: junit, junit5
+tags: Junit Junit5
 ---
 
 ## Introduction
