@@ -39,7 +39,7 @@ To use JUnit 5, ensure your project includes the JUnit 5 dependencies. If you're
 
 #### Writing the Test
 
-Here’s a basic test for the isEven method:
+Here’s a basic test for the ```isEven``` method:
 
 ```java
 import org.junit.jupiter.api.Test;
@@ -61,7 +61,7 @@ public class MathUtilsTest {
 
 #### Explanation of the Test
 
-**Test Annotation** The **@Test** annotation marks a method as a test method.
+**Test Annotation** The ``@Test`` annotation marks a method as a test method.
 
 **Assertions:**
 - ```assertTrue(condition, message)```: Ensures the condition is true, otherwise fails with the provided message.
@@ -73,10 +73,10 @@ public class MathUtilsTest {
 
 Most modern IDEs like IntelliJ IDEA, Eclipse, or VS Code support running JUnit 5 tests directly. To execute the test:
 
-1. Right-click on the test file or method and select Run.
+1. Right-click on the test file or method and select **Run**.
 2. Alternatively, use the terminal to run tests with Maven or Gradle:
 
-**Maven:** mvn test
+**Maven:** ```mvn test```
 
 ## Summary
 
