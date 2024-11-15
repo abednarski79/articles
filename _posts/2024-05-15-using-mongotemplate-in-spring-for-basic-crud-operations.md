@@ -2,7 +2,7 @@
 layout: post
 title: Using MongoTemplate in Spring for Basic CRUD Operations
 date: 2024-05-15
-tags: mongo, mongotemplate, spring
+tags: Mongo  MongoTemplate Spring
 ---
 
 ## Introduction
