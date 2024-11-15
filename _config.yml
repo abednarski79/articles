@@ -1,6 +1,6 @@
 title: My Articles
 description: A simple site for my articles
-baseurl: "/articles"  # Leave blank if hosted at the root
-url: "https://abednarski79.github.io"  # Change this to your GitHub Pages URL
+baseurl: ""  # Leave blank if hosted at the root
+url: "https://abednarski79.github.io/articles"  # Change this to your GitHub Pages URL
 theme: "minima"  # Optional: Use a built-in theme
 
