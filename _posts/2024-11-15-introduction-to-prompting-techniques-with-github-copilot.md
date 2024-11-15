@@ -2,6 +2,7 @@
 layout: post
 title: Introduction to Prompting Techniques with GitHub Copilot
 date: 2024-11-15
+tags: copilot, prompting
 ---
 
 ## Introduction
